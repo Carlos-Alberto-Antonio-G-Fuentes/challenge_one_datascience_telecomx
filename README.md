@@ -31,21 +31,25 @@ StreamingMovies: ['No' 'Yes' 'No internet service']
 
 Por lo anterior los valores distintos a YES o NO se reemplazaron por 0.
 Además se detectó que la columna InternetService: ['DSL' 'Fiber optic' 'No'] si bien tiene valores NO, esta columna no será intervenida.
+
 19.  Se cambian a minúscula las siguientes columnas:
 gender
 InternetService
 Contract
 PaymentMethod
-20.  En la columna PaymentMethod, se reemplazan los siguientes valores:
+
+21.  En la columna PaymentMethod, se reemplazan los siguientes valores:
 credit card (automatic) por credit card automatic
 bank transfer (automatic) por bank transfer automatic.
-21.  En la columna Contract, se reemplazan los siguientes valores:
+
+23.  En la columna Contract, se reemplazan los siguientes valores:
 month-to-month por month to month
-22.  Se revisa el archivo datos_final.
-23.  Se calculan metricas con el codigo datos_final.describe().
-24.  Se utiliza gráfico de torta (pie) para visualizar la proporción de clientes que permanecieron y los que se dieron de baja marcados en la columna Churn (1=activo;0=inactivo).
-25.  Se crea un nuevo df denominado evasion, para analizar y graficar la evasión por genero, tipo de contrato y metodo de pago.
-26.  Grafica evasion por genero, tipo de contrato y metodo de pago (cantidad de clientes).
-28.  Grafica evasion por genero, tipo de contrato y metodo de pago (% de clientes).
-29.  Se crea un nuevo df denominado evasion2, para analizar y graficar la evasión por TotalCharges y tenure.
-30.  Grafico histograma para visualizar cómo se distribuyen las variables numéricas entre quienes cancelaron y quienes no, respecto TotalCharges y tenure.
+
+25.  Se revisa el archivo datos_final.
+26.  Se calculan metricas con el codigo datos_final.describe().
+27.  Se utiliza gráfico de torta (pie) para visualizar la proporción de clientes que permanecieron y los que se dieron de baja marcados en la columna Churn (1=activo;0=inactivo).
+28.  Se crea un nuevo df denominado evasion, para analizar y graficar la evasión por genero, tipo de contrato y metodo de pago.
+29.  Grafica evasion por genero, tipo de contrato y metodo de pago (cantidad de clientes).
+30.  Grafica evasion por genero, tipo de contrato y metodo de pago (% de clientes).
+31.  Se crea un nuevo df denominado evasion2, para analizar y graficar la evasión por TotalCharges y tenure.
+32.  Grafico histograma para visualizar cómo se distribuyen las variables numéricas entre quienes cancelaron y quienes no, respecto TotalCharges y tenure.
